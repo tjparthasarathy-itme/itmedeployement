@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="India Travel Mart Exhibitions">
+    <title>India Travel Martet Exhibitions</title>
+    <link rel="stylesheet" href="assets/css/popup.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/elements.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Attach submit event listener to the form
+            document.getElementById("ajax_contact").addEventListener("submit", function(event) {
+                // Prevent the form from submitting in the traditional way
+                event.preventDefault();
+
+                // Log the submit handler being triggered
+                console.log("Submit handler triggered");
+
+                // Log the entire form data
+                console.log("Form Data:", {
+                    firstname: document.getElementById("firstname").value,
+                    lastname: document.getElementById("lastname").value,
+                    phone: document.getElementById("phone").value,
+                    email: document.getElementById("email").value,
+                    message: document.getElementById("message").value
+                });
+
+                // Additional form submission logic can be added here
+
+                // For demonstration purposes, submitting the form using AJAX
+                // You may replace this with your actual form submission logic
+                submit_contactUs_form();
+            });
+        });
+
+        function submit_contactUs_form() {
+            // Add your AJAX form submission logic here
+            // For demonstration purposes, you can display a success message
+            document.getElementById("form-messages").textContent = "Form submitted successfully!";
+        }
+    </script>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="mid-header">
+            <div class="container">
+                <div class="mid-header-wrap">
+                    <div class="site-logo">
+                        <a href="index.html"><img src="assets/img/ITME_Logo_Big.png" alt="Logo"></a>
+                    </div>
+                    <ul class="header-info">
+                        <li>
+                            <div class="header-info-icon">
+                                <img src="assets/img/Location.svg">
+                        </li>
+                        <li>
+                            <div class="header-info-text">
+                                <h3>Mysuru</h3>
+                                <h4>28<sup>th</sup>  & 29<sup>th</sup> June 2024</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-info-icon">
+                                <img src="assets/img/Location.svg">
+                        </li>
+                        <li>
+                            <div class="header-info-text">
+                                <h3>Managalore</h3>
+                                <h4>23<sup>rd</sup> & 24sup>th</sup> Aug. 2024</h4>
+                            </div>
+                        </li>
+                        <li>
+                        <li>
+                            <div class="header-info-icon">
+                                <img src="assets/img/Location.svg">
+                        </li>
+                        <li>
+                            <div class="header-info-text">
+                                <h3>Nagpur</h3>
+                                <h4>8<sup>th</sup> & 9<sup>th</sup> Nov. 2024</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-info-icon">
+                                <img src="assets/img/Location.svg">
+                        </li>
+                        <li>
+                            <div class="header-info-text">
+                                <h3>Vijayawada</h3>
+                                <h4>13<sup>th</sup> & 14<sup>th</sup> Dec. 2024</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-menu-wrapper">
+            <div class="container">
+                <div class="nav-menu-inner">
+                    <div class="site-logo">
+                        <a href="index.html"><img src="assets/img/ITME_Logo.png" alt="Logo"></a>
+                    </div>
+                    <div class="header-menu-wrap">
+                        <ul class="nav-menu">
+                            <li> <a href="index.html">Home</a> </li>
+                            <li> <a href="#about">About Us</a> </li>
+                            <li> <a href="#exhibit">Exhibitor</a> </li>
+                            <li> <a href="#organise">Organiser</a> </li>
+                            <li> <a href="#visit">Visit</a> </li>
+                            <li> <a href="#register">Register</a> </li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-right-item">
+                        <div class="sidebox-icon dl-sidebox-icon">
+                            <li>
+                                <img src="assets/img/burger.svg">
+                            </li>
+                        </div>
+                        <a href="#register" class="menu-btn">Book Your Space</a>
+                    </div>
+                    <div class="mobile-menu-icon">
+                        <div class="burger-menu">
+                            <div class="line-menu line-half first-line"></div>
+                            <div class="line-menu"></div>
+                            <div class="line-menu line-half last-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="searchbox-overlay"></div>
+    <div id="popup-sidebox" class="popup-sidebox">
+        <div class="sidebox-content">
+            <div class="site-logo">
+                <a href="index.html"><img src="assets/img/itme.png" alt="logo"></a>
+            </div>
+            <ul class="sidebox-list">
+                <li class="call"><span>Call:</span>+91 72594 76501</li>
+                <li class="call"><span></span>+91 93538 61721</li>
+                <li>
+                    <span>You can find us at:</span>#36/1, Sai Krupa,<br>Muneshwara Temple Road,<br>1<sup>st</sup>
+                    Cross,
+                    Narasimhaiah
+                    Colony, Lottegollahalli,<br>Bangalore - 560 094.
+                </li>
+                <li><span>Email now:</span>raju@itmeindia.com<br>info@itmeindia.com</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="sidebox-overlay"></div>
+
+    <div class="slider-section">
+        <div class="main-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slider-img"><img src="assets/img/slider-bg.jpg" alt="img" class="kenburns"
+                            style="animation-duration: 12000ms; "></div>
+                    <div class="flying-plane">
+                        <div class="Plane-1"></div>
+                        <div class="Plane-2"></div>
+                        <div class="Plane-3"></div>
+                    </div>
+                    <div class="event-holder">
+                        <img src="assets/img/Travel-1.png" alt="event" data-animation="event-animation"
+                            data-duration="2.5s">
+                        <div class="shape">
+                            <div data-animation="slide-in-bottom" data-duration="1.5s" data-delay="0.3s"></div>
+                            <div data-animation="fade-in" data-duration="1.5s" data-delay="0.2s"></div>
+                            <div data-animation="slide-in-top" data-duration="1.5s" data-delay="0.5s"></div>
+                        </div>
+                    </div>
+                    <div class="slider-content-wrap d-flex align-items-center text-left">
+                        <div class="container">
+                            <div class="slider-content">
+                                <div class="slider-caption medium">
+                                    <div class="inner-layer">
+                                        <div data-animation="fade-in-bottom" data-delay="0.3s">
+                                            <br><br><br><br><br>Maximize
+                                            your
+                                            business
+                                            prospects!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-caption big">
+                                    <div class="inner-layer">
+                                        <div data-animation="fade-in-bottom" data-delay="0.5s">ITME - Organises a wide
+                                            range of<br>Travel Trade Exhibition in fast growing cities.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-caption small">
+                                    <div class="inner-layer">
+                                        <div data-animation="fade-in-bottom" data-delay="0.7s" data-duration="1s">
+                                            You will find Business-to-Business as well as Business-to-Consumer<br>
+                                            clients
+                                            participating in our events.
+                                            Thus expanding the horizon<br>for the attendees to mutually benefit from our
+                                            Exhibitions.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-btn" id="about"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="about-section padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="about-img">
+                        <img class="about-img1 wow fade-in-left" data-wow-delay="200ms" src="assets/img/exhibition.png"
+                            alt="img">
+                        <figure class="round-text"><img src="assets/img/circle.png" alt="img"></figure>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="section-heading mb-40 wow fade-in-right" data-wow-delay="200ms">
+                        <h4><span></span>About Our Company</h4>
+                        <h2>Feel the difference with ITME!</h2>
+                        <h5>We are one of India’s premier Travel Trade Platform organizing varied B2B and B2C
+                            Exhibitions and Events. One of the best Travel & Tourism Exhibition Company,
+                            organizing a wide range of events across major cities of India.</h5>
+                        <h5>We are supported by the State Tourism Boards, Union Territories of India, International
+                            Tourism Boards and their representative companies, along with Travel
+                            Associations of India.</h5>
+                    </div>
+                    <ul class="about-info wow fade-in-right" data-wow-delay="400ms">
+                        <li>
+                            <img class="owner-thumb" src="assets/img/owner.png" alt="thumb">
+                            <div class="owner">
+                                <h4>T.J.P. Raju</h4>
+                                <h5>Project - Head</h5>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="booking-section" id="exhibit"></div>
+        </div>
+    </section>
+
+    <div class="exhbit-section">
+        <div class="main-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slider-content-wrap d-flex align-items-center text-left">
+                        <div class="container">
+                            <div class="slider-content">
+                                <div class="slider-btn"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="booking-section" id="visit"></div>
+    </div>
+
+    <section class="visit-section bg-grey bd-bottom padding">
+        <div class="container">
+            <div class="section-heading text-center mb-40 wow fade-in-bottom" data-wow-delay="200ms">
+                <h4><span></span>India Travel Market Exhibitons!</h4>
+                <h5> The domestic travel industry in India is experiencing an unprecedented surge, with reports
+                    suggesting that around 82% of them are Indians - the largest chunk of the traveling
+                    population. Of these, 44% are looking forward to a domestic holiday and is estimated to
+                    cross the $24 billion mark by 2024.</h5>
+                <h5>Gain premium brand exposure in front of 1,500+ Exhibitors and 10,000+ Trade Visitors across cities
+                    in India. Boost your presence among the Travel Trade, MICE, Business Travel Industry, and
+                    Media. Don't miss this opportunity to maximize your business
+                    potential with ITME!
+                </h5>
+            </div>
+
+            <div class="tab-content" id="event-tab-content">
+                <div class="tab-pane fade show active" id="event-content" role="tabpanel"
+                    aria-labelledby="event-content">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 sm-padding">
+                            <div class="visit-item">
+                                <div class="visit-head">
+                                    <h4>BENEFITS FOR TRADE VISITORS</a></h4>
+                                </div>
+                                <ul class="visit-list">
+                                    <li>You will be able to get a mass audience at one place to
+                                        showcase Existing Products/Services and launching new ones.
+                                    </li>
+                                    <li>You will get a chance to participate at India’s Largest
+                                        Travel Exhibition.</li>
+                                    <li>You will be able to create a Market for yourself and
+                                        Establish Contacts with various Businesses Partners, Suppliers and Buyers.</li>
+                                    <li>You will be able to Develop and Enhance your Brand
+                                        Presence by reaching out to the Global Travel Community.</li>
+                                    <li>This also brings you the prospects of generating New Sales
+                                        Leads for your Business.</li>
+                                    <li>These exhibitions are an opportunity to Network with
+                                        prominent Decision Makers and Experts of the Industry.</li>
+                                    <li><a href="trade-visitor.html" class="default-btn">Register for Trade Visitor</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 sm-padding">
+                            <div class="visit-item">
+                                <div class="visit-head">
+                                    <h4>BENEFITS FOR GENERAL VISITORS</a></h4>
+                                </div>
+                                <ul class="visit-list">
+                                    <li>You will learn about the latest developments taking place in
+                                        the Travel and Tourism Industry.</li>
+                                    <li>Get Exclusive Offers and Deals on Travel Products / Services Packages.</li>
+                                    <li>You get the opportunity to experience Live Demonstrations, Interactive Sessions
+                                        and Product Launches.</li>
+                                    <li>It is a platform to Explore and Enhance your passion for travelling. You may
+                                        also get some freebies when you visit any Exhibitor.</li>
+                                    <li>You will become familiar with different types of Travel Products
+                                        and Services prevailing in the Industry.</li>
+                                    <li>Get the opportunity to meet and network with the Travel Community and Tourism
+                                        Industry.</li>
+                                    <li><a href="gen-visitor.html" class="default-btn">Register for General Visitor</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="booking-section" id="register"></div>
+        </div>
+    </section>
+
+
+    <section class="booking-section">
+        <div class="container">
+            <div class="row pos-relative padding">
+                <div class="col-lg-4">
+                    <div class="booking-event wow fade-in-left" data-wow-delay="200ms"></div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="booking-wrap">
+                        <div class="section-heading mb-30">
+                            <h4><span></span>Online Booking</h4>
+                            <h2 class="white">Book Your Space</h2>
+                        </div>
+                        <form action="/submit-booking" id="book-event" method="POST">
+                            <div class="booking-form">
+    
+                                <div class="form-field">
+                                    <i class="header-info-icon">
+                                        <img src="assets/img/Name.svg">
+                                    </i>
+                                    <input type="text" id="user-name" name="user-name" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                
+                                <div class="form-field">
+                                    <i class="header-info-icon">
+                                        <img src="assets/img/Name.svg">
+                                    </i>
+                                    <input type="text" id="designation" name="designation" class="form-control" placeholder="Designation" required>
+                                </div>
+                                
+                                <div class="form-field">
+                                    <i class="header-info-icon">
+                                        <img src="assets/img/Name.svg">
+                                    </i>
+                                    <input type="text" id="company" name="company" class="form-control" placeholder="Company" required>
+                                </div>
+    
+                                <div class="form-field">
+                                    <i class="header-info-icon">
+                                        <img src="assets/img/ph.svg"></i>
+                                    <input type="text" id="mobile-number" name="mobile-number" class="form-control"
+                                        placeholder="Mobile Number" required>
+                                </div>
+    
+                                <div class="form-field">
+                                    <i class="header-info-icon">
+                                        <img src="assets/img/mail.svg"></i>
+                                    <input type="email" id="email" name="email" class="form-control" placeholder="E-Mail"
+                                        required>
+                                </div>
+    
+                                <div class="form-field">
+                                    <i class="header-info-icon">
+                                        <img src="assets/img/pin.svg"></i>
+                                    <input type="text" id="address" name="address" class="form-control"
+                                        placeholder="Address" required>
+                                </div>
+    
+                                <div class="form-field">
+                                    <i class="header-info-icon">
+                                        <img src="assets/img/city.svg"></i>
+                                    <input type="text" id="city-state" name="city-state" class="form-control"
+                                        placeholder="City / State" required>
+                                </div>
+    
+                                <div class="form-field">
+                                    <label>
+                                        <input type="checkbox" class="place-checkbox" name="places[]" value="Mysuru - 28-30th June 2024">
+                                        Mysuru - 28-30th June 2024
+                                    </label>
+                                </div>
+                                
+                                <div class="form-field">
+                                    <label>
+                                        <input type="checkbox" class="place-checkbox" name="places[]" value="Mangalore - 23-25th Aug 2024">
+                                        Mangalore - 23-25th Aug. 2024
+                                    </label>
+                                </div>
+                                
+                                <div class="form-field">
+                                    <label>
+                                        <input type="checkbox" class="place-checkbox" name="places[]" value="Nagpur - 8-10th Nov 2024">
+                                        Nagpur - 8-10th Nov. 2024
+                                    </label>
+                                </div>
+                                
+                                <div class="form-field">
+                                    <label>
+                                        <input type="checkbox" class="place-checkbox" name="places[]" value="Vijayawada - 13-15th Dec 2024">
+                                        Vijayawada - 13-15th Dec. 2024
+                                    </label>
+                                </div>
+
+
+    
+                                <div class="form-field">
+                                    <button id="submit" class="default-btn" type="button" onclick="submit_Bookspace_Form()">Book Now</button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div id="form-messages" class="alert" role="alert"></div>
+                </form>
+            </div>
+            <div class="booking-section" id="contact"> </div>
+        </div>
+        </div>
+    </section>
+
+    <div id="sidebox-overlay"></div>
+
+    <div class="map-wrapper pt-90">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d971.7145638561229!2d77.56615653498763!3d13.04469303227979!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17e34a019991%3A0x2913d1bda238a7e5!2sSri%20Muneeshwara%20Temple!5e0!3m2!1sen!2sin!4v1702622134650!5m2!1sen!2sin"
+            width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <div class="booking-section" id="visitor"></div>
+    </div>
+
+    <section class="contact-section bd-bottom padding">
+        <div class="map"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-details-wrap">
+                        <div class="contact-title">
+                            <h2>Have Any <span>Questions?</span></h2>
+                            <p>Get in touch to discuss your queries today.<br>Please give us a call or drop us a e-mail
+                                :- raju@itmeindia.com<br>info@itmeindia.com or fill out the contact form.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-form">
+                        <form action="/contactUs" method="post" id="ajax_contact" class="form-horizontal">
+                            <div class="contact-title">
+                                <h2>Contact With Us! <span></span></h2>
+                            </div>
+                            <div class="contact-form-group">
+                                <div class="form-field">
+                                    <input type="text" id="firstname" name="firstname" class="form-control"
+                                        placeholder="First Name" required>
+                                </div>
+                                <div class="form-field">
+                                    <input type="text" id="lastname" name="lastname" class="form-control"
+                                        placeholder="Last Name" required>
+                                </div>
+                                
+                                <div class="form-field">
+                                    <input type="text" id="phone" name="phone" class="form-control"
+                                        placeholder="Phone Number" required>
+                                </div>
+                                <div class="form-field">
+                                    <input type="email" id="email_id" name="email_id" class="form-control"
+                                        placeholder="E-mail" required>
+                                </div>
+                                <div class="form-field message">
+                                    <textarea id="message" name="message" cols="30" rows="4" class="form-control"
+                                        placeholder="Message" required></textarea>
+                                </div>
+                                <div class="form-field">
+                                    <button id="submit" class="default-btn" type="submit" onclick="submit_contactUs_form(event)">Send Message</button>
+                                </div>
+                            </div>
+                            <div id="form-messages" class="alert" role="alert"></div>
+                        </form>
+                        
+                    </div>
+                </div>
+                <div class="footer-section" id="organise"> </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="footer-top-wrap bg-grey">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="row align-items-end">
+                        <div class="col-lg-8">
+                            <div class="brand">
+                                <a class="footer-logo" href="index.html"><img src="assets/img/jupiter.svg"
+                                        alt="logo"></a>
+                                <p>We successfully cope with tasks of varying complexity, provide long-term guarantees
+                                    and regularly master new technologies.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="footer-call">
+                                <i class="header-info-icon">
+                                    <img src="assets/img/phone1.svg"></i>
+                                <p><span>Call</span><a href="tel:5267214392">+91 72594 76501<br>+91 93538 61721</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-mid-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 sm-padding">
+                        <div class="footer-item">
+                            <ul class="footer-contact">
+                                <li><span>Monday - Saturday:</span>9.00am To 8.00pm</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 sm-padding">
+                        <div class="footer-item">
+                            <ul class="footer-contact">
+                                <li><span>Location:</span>#36/1, Sai Krupa,<br>Muneshwara Temple Road,<br>1<sup>st</sup>
+                                    Cross,
+                                    Narasimhaiah
+                                    Colony,<br>Lottegollahalli,<br>Bengaluru - 560 094</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 sm-padding">
+                        <div class="footer-item">
+                            <ul class="footer-contact">
+                                <li><span>Registration No.:</span>GSTN: 29ATPT330L1ZU</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 sm-padding">
+                        <div class="footer-item subscribe-wrap">
+                            <form action="#" class="subscribe-form" onsubmit="return false;">
+                                <input type="hidden" name="action" value="mailchimpsubscribe">
+                                <button class="submit" onclick="downloadBrochure()">Brochure Download</button>
+                                <div class="clearfix"></div>
+                                <div id="subscribe-result">
+                                    <div class="subscription-success"></div>
+                                    <div class="subscription-error"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <script>
+                        function downloadBrochure() {
+                            var brochurePath = "assets/brochures/ITME_Brochure.pdf";
+                            var downloadLink = document.createElement("a");
+                            downloadLink.href = brochurePath;
+                            downloadLink.download = "ITME_Brochure.pdf";
+                            document.body.appendChild(downloadLink);
+                            downloadLink.click();
+                            document.body.removeChild(downloadLink);
+                        }
+                    </script>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright-wrap">
+            <br class="container">
+                <p>Conceptualized and Designed by Ramesh Naidu and Parinitha Naidu </p><p>Developed by Karthik Ram and Harshitha Ravuri </p>
+            </div>
+        </div>
+    </footer>
+    <div id="scrollup">
+        <button id="scroll-top" class="scroll-to-top">
+            <i class="header-info-icon">
+                <img src="assets/img/up.svg"></i>
+        </button>
+    </div>
+    <div id="popupModal" class="modal">
+        <div class="modal-content">
+            <span id="closePopup" class="close" onclick="closePopup()">&times;</span>
+            <div class="popup-inner">
+                <p id="popupContent"></p>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/vendor/form_submission.min.js"></script>
+    <script src="assets/js/vendor/jquary-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/swiper.min.js"></script>
+    <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
+    <script src="assets/js/vendor/venobox.min.js"></script>
+    <script src="assets/js/vendor/smooth-scroll.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+</body>
+
+</html>
